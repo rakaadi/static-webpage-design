@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap");
+* { -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; font-family: "Noto Sans JP", sans-serif; }
+
+body { background-color: #F7F8FA; }
+
+a { text-decoration: none; color: black; }
+
+.header-title { font-family: "Nunito", sans-serif; font-size: 1.85rem; font-weight: 375; margin: 16px 22px; text-transform: uppercase; text-align: center; }
+
+hr { margin: 30px auto; width: 95%; }
+
+.container { display: -ms-grid; display: grid; -ms-grid-columns: 1fr; grid-template-columns: 1fr; gap: 10px; width: 100vw; }
+
+.container .image-box { height: 480px; width: 90vw; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; background: center center/cover; margin: 0 auto; }
+
+.container .image-box span { font-size: 16px; border-radius: 20px; padding: 3px 8px; margin: auto 16px; background-color: #ffff; font-style: italic; }
+
+.container a:hover { text-decoration: underline; }
+
+.container .one { background-image: url("../../assets/Gray_and_White_High-rise_Building.jpg"); }
+
+.container .two { background-image: url("../../assets/daniel-eledut-airplane.jpg"); }
+
+.container .three { background-image: url("../../assets/mitch-nielsen-drone.jpg"); }
+
+.container .four { background-image: url("../../assets/elias-ship.jpg"); }
+
+.container .five { background-image: url("../../assets/satellite-pexels.jpg"); }
+
+.container .six { background-image: url("../../assets/stellan-antenna.jpg"); }
+
+.container .seven { background-image: url("../../assets/alex-robot.jpg"); }
+
+.container .eight { background-image: url("../../assets/luke-smartwatch.jpg"); }
+
+.container .nine { background-image: url("../../assets/undraw_aircraft_fbvl.png"); }
+
+.lorem { margin: 42px auto; text-align: center; }
+
+.lorem span { font-size: 16px; border-radius: 20px; padding: 3px 8px; margin: auto 16px; background-color: #ffff; font-style: italic; }
+
+.lorem .picsum { display: -ms-grid; display: grid; -ms-grid-columns: (minmax(200px, 300px))[3]; grid-template-columns: repeat(3, minmax(200px, 300px)); height: 240px; gap: 10px; margin: 16px auto; }
+
+.lorem .picsum .first { background: url("https://picsum.photos/id/0/360/240") center center/cover; }
+
+.lorem .picsum .second { background: url("https://picsum.photos/id/1048/360/240") center center/cover; }
+
+.lorem .picsum .third { background: url("https://picsum.photos/id/1026/360/240") center center/cover; }

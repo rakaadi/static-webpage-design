@@ -1,0 +1,90 @@
+@import "config";
+
+@mixin spanStyles {
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 3px 8px;
+    margin: auto 16px;
+    background-color: #ffff;
+    font-style: italic;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 100vw;
+
+    .image-box {
+        height: 480px;
+        width: 90vw;
+        display: flex;
+        justify-content: flex-start;
+        background: center center/cover;
+        margin: 0 auto;
+
+
+        span {
+            @include spanStyles();
+        }
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .one {
+        background-image: url("../../assets/Gray_and_White_High-rise_Building.jpg");
+    }
+    .two {
+        background-image: url("../../assets/daniel-eledut-airplane.jpg");
+    }
+    .three {
+        background-image: url("../../assets/mitch-nielsen-drone.jpg");
+    }
+    .four {
+        background-image: url("../../assets/elias-ship.jpg");
+    }
+    .five {
+        background-image: url("../../assets/satellite-pexels.jpg");
+    }
+    .six {
+        background-image: url("../../assets/stellan-antenna.jpg");
+    }
+    .seven {
+        background-image: url("../../assets/alex-robot.jpg");
+    }
+    .eight {
+        background-image: url("../../assets/luke-smartwatch.jpg");
+    }
+    .nine {
+        background-image: url("../../assets/undraw_aircraft_fbvl.png");
+    }
+}
+
+.lorem {
+    margin: 42px auto;
+    text-align: center;
+
+    span {
+        @include spanStyles();
+    }
+
+    .picsum {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 300px));
+        height: 240px;
+        gap: 10px;
+        margin: 16px auto;
+
+        .first {
+            background: url("https://picsum.photos/id/0/360/240") center center/cover;
+        }
+        .second {
+            background: url("https://picsum.photos/id/1048/360/240") center center/cover;
+        }
+        .third {
+            background: url("https://picsum.photos/id/1026/360/240") center center/cover;
+        }
+    }
+}
