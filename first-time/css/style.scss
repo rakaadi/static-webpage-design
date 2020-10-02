@@ -7,7 +7,7 @@ header {
     // background-image: linear-gradient( 178.1deg,  rgba(60,55,106,1) 8.5%, rgba(23,20,69,1) 82.4% );
     background: url("../../assets/Gray_and_White_High-rise_Building.jpg") center center/cover;
     height: 100vh;
-    
+
     nav {
         display: flex;
         justify-content: space-between;
@@ -27,7 +27,7 @@ header {
                 padding: 20px;
 
                 a {
-                    padding: 6px 12px;   
+                    padding: 6px 12px;
 
                     &:hover {
                         border-radius: 12px;
@@ -129,6 +129,10 @@ header {
             }
         }
     }
+
+    .img-right {
+        flex-direction: row-reverse;
+    }
 }
 
 footer {
@@ -163,7 +167,7 @@ footer {
             font-size: 2rem;
         }
     }
-    
+
     .latest-news {
         display: grid;
         grid-template-columns: 1fr;
